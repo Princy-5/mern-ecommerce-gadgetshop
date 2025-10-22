@@ -1,0 +1,111 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px; /* fixed height */
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;  /* vertically center all children */
+  justify-content: space-between; /* space between logo and right side */
+  padding: 0 20px; /* horizontal padding */
+  box-sizing: border-box;
+}
+
+.header h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4f46e5;
+  margin: 0;
+  cursor: default;
+}
+
+.header h1 span {
+  color: #111827;
+}
+
+.header nav {
+  display: flex;
+  gap: 20px;
+  flex-grow: 1; /* take up space between logo and right-side */
+  margin-left: 30px; /* space after logo */
+}
+
+.header nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 6px 8px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.header nav a:hover {
+  background-color: #e0e7ff;
+  color: #4f46e5;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.cart {
+  position: relative;
+  font-size: 24px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none; /* so clicking badge triggers cart */
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.auth-buttons button {
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.auth-buttons button:hover {
+  background-color: #3730a3;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  font-size: 24px;
+}
+
+.logo img {
+  height: 30px;
+}

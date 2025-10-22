@@ -1,0 +1,24 @@
+#newsletter {
+  background-color: #f3f4f6;
+  padding: 50px 30px;
+  text-align: center;
+  border-top: 1px solid #e5e7eb;
+  margin-bottom: 50px;
+}
+
+#newsletter input {
+  padding: 10px;
+  width: 250px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#newsletter button {
+  padding: 10px 20px;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
