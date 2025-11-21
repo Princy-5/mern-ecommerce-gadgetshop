@@ -1,0 +1,5 @@
+/* WishlistPage.css */
+.wishlist-container { padding: 20px; }
+.wishlist-grid { display: grid; grid-template-columns: repeat(auto-fill,minmax(220px,1fr)); gap: 16px; }
+.wishlist-card { border: 1px solid #eee; border-radius: 8px; padding: 12px; }
+.wishlist-card img { width: 100%; height: 150px; object-fit: cover; border-radius: 6px; }

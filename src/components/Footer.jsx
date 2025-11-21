@@ -1,21 +1,20 @@
-
+// src/components/Footer.jsx
 import React from 'react';
 import './Footer.css';
 
 function Footer() {
   return (
     <footer className="footer">
-      <div className="footer-text">
-        © {new Date().getFullYear()} GadgetShop. All rights reserved.
-      </div>
-      <div className="socials">
-        <a href="#"><img src="https://img.icons8.com/?size=100&id=118497&format=png&color=000000" alt="Facebook" /></a>
-        <a href="#"><img src="https://img.icons8.com/?size=100&id=6Fsj3rv2DCmG&format=png&color=000000" alt="Twitter" /></a>
-        <a href="#"><img src="https://img.icons8.com/?size=100&id=Xy10Jcu1L2Su&format=png&color=000000" alt="Instagram" /></a>
+      <div className="footer-content">
+        <p>© 2025 GadgetShop. All rights reserved.</p>
+        <div className="footer-icons">
+          <a href="#"><img src="https://img.icons8.com/ios-filled/50/7dd3fc/facebook.png" alt="Facebook" /></a>
+          <a href="#"><img src="https://img.icons8.com/ios-filled/50/7dd3fc/twitter.png" alt="Twitter" /></a>
+          <a href="#"><img src="https://img.icons8.com/ios-filled/50/7dd3fc/instagram.png" alt="Instagram" /></a>
+        </div>
       </div>
     </footer>
   );
 }
 
 export default Footer;
-
