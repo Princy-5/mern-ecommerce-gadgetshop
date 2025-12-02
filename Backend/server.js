@@ -90,7 +90,7 @@ mongoose.connection.on('error', (err) => {
 
 // Start server
 connectDB().then(() => {
-  app.listen(PORT, "0.0.0.0",  () => {
+  app.listen(PORT, () => {
     console.log(`🚀 Server running on port ${PORT}`);
     console.log(`🌐 Health check: http://localhost:${PORT}/api/health`);
     console.log(`🔗 MongoDB: Atlas Cluster`);
